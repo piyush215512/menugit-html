@@ -6,14 +6,14 @@ function saveTasks() {
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-// Function to add a new task
+
 function addTask(taskText) {
   tasks.push({ text: taskText, completed: false });
   saveTasks();
   displayTasks();
 }
 
-// Function to toggle task completion
+
 function toggleTask(index) {
   tasks[index].completed = !tasks[index].completed;
   saveTasks();
